@@ -1,0 +1,22 @@
+<!-- HTML & JavaScript code to display the retrieved information -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Display</title>
+</head>
+<body>
+    <div id="infoDisplay"></div>
+
+    <script>
+        // Making HTTP GET request to retrieve information from Python backend
+        fetch('http://localhost:5000/retrieve')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('infoDisplay').innerHTML = JSON.stringify(data);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
