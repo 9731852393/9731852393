@@ -1,0 +1,19 @@
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+
+# Dummy database
+data = []
+
+@app.route('/store', methods=['POST'])
+def store_info():
+    info = request.get_json()
+    data.append(info)
+    return jsonify({'message': 'Information stored successfully'})
+
+@app.route('/retrieve', methods=['GET'])
+def retrieve_info():
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
