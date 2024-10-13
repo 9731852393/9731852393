@@ -1,4 +1,4 @@
-- 👋 Hi, I’m viresh j
+- 👋 Hi, I’m viresh j.
 - 👀 I’m interested in full stack devlopment,cyber scurity and more.
 - 🌱 I’m currently learning web and application devlopment.
 - 💞️ I’m looking to collaborate on cyber scurity filed.
